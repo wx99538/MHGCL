@@ -5,7 +5,7 @@ from MultiViewHeteroGNNContrastiveLearning import MultiViewHeteroGNNContrastiveL
 from CrossAttentionFusion import CrossAttentionFusion
 
 
-class DHLMCLF(nn.Module):
+class MHGCL(nn.Module):
     """
     Deep Heterogeneous Learning with Multi-View Contrastive Learning Framework (DHLMCLF)
 
@@ -22,7 +22,7 @@ class DHLMCLF(nn.Module):
     """
 
     def __init__(self, feature_dim, in_dim, class_num, k1, k2, k3, dropout):
-        super(DHLMCLF, self).__init__()
+        super(MHGCL, self).__init__()
 
         # Initialize three Dynamical Graph Learning modules for each modality
         self.modality1_encoder = DynamicalGraphLearning(feature_dim[0], in_dim, class_num, k1, dropout)
