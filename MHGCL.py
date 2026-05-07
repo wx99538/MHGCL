@@ -7,7 +7,6 @@ from CrossAttentionFusion import CrossAttentionFusion
 
 class MHGCL(nn.Module):
     """
-    Deep Heterogeneous Learning with Multi-View Contrastive Learning Framework (DHLMCLF)
 
     Combines three DynamicalGraphLearning modules with MultiViewHeteroGNNFusion for multi-modal learning.
 
@@ -39,7 +38,6 @@ class MHGCL(nn.Module):
 
     def forward(self, x1, x2, x3, y=None, testing=False):
         """
-        Forward pass of the DHLMCLF model.
 
         Args:
             x1, x2, x3: Input features for three modalities
